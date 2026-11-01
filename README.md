@@ -1,4 +1,4 @@
-# 🧠 Multilayer Perceptron
+# Multilayer Perceptron
 
 A multilayer perceptron written from the ground up to tell malignant (`M`) breast
 tumours from benign (`B`) ones, using the Wisconsin diagnostic dataset.
@@ -107,7 +107,7 @@ network → the network calls its layers → each layer calls its activation.
 Nothing knows about anything above it, so the project can be read from the
 bottom up without having to backtrack.
 
-## 🔬 Key factors that actually improve the results
+## Key factors that actually improve the results
 
 **Normalisation.** The raw columns run from about 0.05 to 2500. Features with large numbers dominate the calculation and push the sigmoid function into its flat extremes. In these flat zones, the mathematical gradient drops to near zero, stopping the network from learning. So every column is centred and scaled with the training-set mean and standard deviation, and those two numbers are saved inside the model so that predict.py applies the exact same mean and standard deviation. (Calculating them across all rows at once would leak test data into the training phase, giving the model an unfair preview of unseen cases.) Brains have a version of the same problem: neurons have to keep their firing in a usable range whatever the strength of the input, and they manage it with mechanisms such as synaptic scaling (Turrigiano et al., 1998) and divisive normalisation (Carandini & Heeger, 2012). Same motivation, different machinery.
 
