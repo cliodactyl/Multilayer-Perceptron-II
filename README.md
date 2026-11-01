@@ -12,7 +12,7 @@ matplotlib draws the curves, and everything else must be written from scratch.
 
 ---
 
-## 🧪 The data
+## The data
 
 The Wisconsin Diagnostic Breast Cancer dataset (Wolberg, Street &
 Mangasarian, via UCI) has 569 samples: 357 benign + 212 malignant. Each one
