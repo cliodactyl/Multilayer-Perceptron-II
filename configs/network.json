@@ -1,0 +1,16 @@
+{
+  "train": "data/data_training.csv",
+  "valid": "data/data_validation.csv",
+  "layer": [24, 24, 24],
+  "activation": "sigmoid",
+  "initialiser": "heUniform",
+  "loss": "categoricalCrossentropy",
+  "optimizer": "sgd",
+  "learning_rate": 0.0314,
+  "batch_size": 8,
+  "epochs": 84,
+  "seed": 42,
+  "model": "saved_model.npy",
+  "history": "history_sgd.json",
+  "plot": "learning_curves.png"
+}

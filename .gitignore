@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+*.npy
+history*.json
+predictions.csv
+
+*.png
+!docs/images/*.png
+
+data/data_training.csv
+data/data_validation.csv
+
+.DS_Store
